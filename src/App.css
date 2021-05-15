@@ -36,3 +36,138 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/*** COLORS **/
+.cold-pruple {
+  color: #aba6de;
+}
+.lavender-gray {
+  color: #b6bcd6;
+}
+.padua {
+  color: #a3e6be;
+}
+.mint-green {
+  color: #abffb8;
+}
+.sea-mist {
+ color: #c8ded0;
+}
+.cold-purple-bg {
+  background-color: #aba6de;
+}
+.lavender-gray-bg {
+  background-color: #b6bcd6;
+}
+.padua-bg {
+  background-color: #a3e6be;
+}
+.mint-green-bg {
+  background-color: #abffb8;
+}
+.sea-mist-bg {
+ background-color: #c8ded0;
+}
+
+.glow {
+  color: #fff;
+  font-size: 8rem;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1rem #fff, 0 0 2rem #fff, 0 0 3rem #a3e6be, 0 0 4rem #a3e6be, 0 0 5rem #a3e6be, 0 0 6rem #a3e6be, 0 0 7rem #a3e6be;
+  }
+  to {
+    text-shadow: 0 0 2rem #fff, 0 0 3rem #abffb8, 0 0 4rem #abffb8, 0 0 5rem #abffb8, 0 0 6rem #abffb8, 0 0 7rem #abffb8, 0 0 8rem #abffb8;
+  }
+}
+
+.btn-loading {
+    border-color: #c8ded0;
+    color: #c8ded0;
+    background-image: linear-gradient(45deg, transparent 50%, #c8ded0 50%);
+    background-position: 25%;
+    background-size: 400%;
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.btn-loading:hover {
+    color: white;
+    background-position: 90%;
+}
+
+/*** NAVIGATION ***/
+.anchor{
+    position: relative;
+    top: -100px;
+}
+.navigation {
+    margin: 0 0 100px;
+}
+
+nav.navbar {
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 767.98px) {
+    .navbar-collapse > div.navbar-nav {
+        width: 150px;
+        background-color: #f8f9fa;
+        margin-left: auto;
+        margin-right: 0 !important;
+        border-top-left-radius: 5em;
+        border-bottom-left-radius: 5em;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 6px 20px rgba(0, 0, 0, 0.19));
+    }
+
+    .navbar-collapse > div.navbar-nav a {
+        text-align: right !important;
+        padding-right: 1rem;
+    }
+}
+
+.navbar-brand {
+    margin-bottom: 12px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.header {
+  max-height: 600px;
+
+}
+.our-concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.devider {
+  border-bottom: 1px solid white;
+  margin: 1.5rem 0 2rem;
+  width: 15%;
+  display: block;
+}
+
+/*** PRODUCTS ***/
+.product img{
+  height: 300px;
+}
