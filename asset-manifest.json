@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/deja-porte/static/css/main.0269a0e6.chunk.css",
-    "main.js": "/deja-porte/static/js/main.b193ed3a.chunk.js",
-    "main.js.map": "/deja-porte/static/js/main.b193ed3a.chunk.js.map",
+    "main.css": "/deja-porte/static/css/main.8134f55b.chunk.css",
+    "main.js": "/deja-porte/static/js/main.baf513d1.chunk.js",
+    "main.js.map": "/deja-porte/static/js/main.baf513d1.chunk.js.map",
     "runtime-main.js": "/deja-porte/static/js/runtime-main.f435ee96.js",
     "runtime-main.js.map": "/deja-porte/static/js/runtime-main.f435ee96.js.map",
     "static/js/2.de64a837.chunk.js": "/deja-porte/static/js/2.de64a837.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e8718e6a.chunk.js": "/deja-porte/static/js/3.e8718e6a.chunk.js",
     "static/js/3.e8718e6a.chunk.js.map": "/deja-porte/static/js/3.e8718e6a.chunk.js.map",
     "index.html": "/deja-porte/index.html",
-    "static/css/main.0269a0e6.chunk.css.map": "/deja-porte/static/css/main.0269a0e6.chunk.css.map",
+    "static/css/main.8134f55b.chunk.css.map": "/deja-porte/static/css/main.8134f55b.chunk.css.map",
     "static/js/2.de64a837.chunk.js.LICENSE.txt": "/deja-porte/static/js/2.de64a837.chunk.js.LICENSE.txt",
     "static/media/header.ee49693e.jpg": "/deja-porte/static/media/header.ee49693e.jpg",
     "static/media/logo.6ce24c58.svg": "/deja-porte/static/media/logo.6ce24c58.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.f435ee96.js",
     "static/js/2.de64a837.chunk.js",
-    "static/css/main.0269a0e6.chunk.css",
-    "static/js/main.b193ed3a.chunk.js"
+    "static/css/main.8134f55b.chunk.css",
+    "static/js/main.baf513d1.chunk.js"
   ]
 }
