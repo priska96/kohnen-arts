@@ -15,7 +15,6 @@ function ProductDetail(props) {
                     <p>{PRODUCTS[props.productId].description}</p>
                 </Col>
             </Row>
-            <Row><Button variant="loading">Buy</Button></Row>
         </Container>
     )
 }

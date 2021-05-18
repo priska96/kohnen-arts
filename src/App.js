@@ -14,11 +14,11 @@ function App(props) {
     return (
 
         <div className="App">
-            <div>
-                Count: {props.count}
-            </div>
-            <button onClick={() => props.increaseCounter()}>Increase Count</button>
-            <button onClick={() => props.decreaseCounter()}>Decrease Count</button>
+            {/*<div>*/}
+            {/*    Count: {props.count}*/}
+            {/*</div>*/}
+            {/*<button onClick={() => props.increaseCounter()}>Increase Count</button>*/}
+            {/*<button onClick={() => props.decreaseCounter()}>Decrease Count</button>*/}
 
             <div className="navigation">
                 <div className="navigation-sub">
@@ -42,15 +42,25 @@ function App(props) {
                     </Navbar>
                 </div>
             </div>
-            <a className="anchor" name="home"/>
-            <Home/>
-            <a className="anchor" name="shop"/>
-            <Shop/>
-            <a className="anchor" name="aboutus"/>
-            <AboutUs/>
-            {/*<div id="project-details"/>*/}
-            <a className="anchor" name="contact"/>
-            <Contact/>
+            {props.productId ?
+                <React.Fragment>
+                    <a className="anchor" name="shop"/>
+                    <Shop/>
+                </React.Fragment>
+                :
+                <React.Fragment>
+                    <a className="anchor" name="home"/>
+                    <Home/>
+                    <a className="anchor" name="shop"/>
+                    <Shop/>
+                    <a className="anchor" name="aboutus"/>
+                    <AboutUs/>
+                    {/*<div id="project-details"/>*/}
+                    <a className="anchor" name="contact"/>
+                    <Contact/>
+                </React.Fragment>
+            }
+
             <footer>
                 <div id="go-top">
                     <a className="smoothscroll" title="Back to Top" href="#home">
@@ -75,6 +85,7 @@ function App(props) {
 const mapStateToProps = state => {
     return {
         count: state.counter.count,
+        productId: state.products.productId,
     }
 }
 
