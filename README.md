@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Color palette [icolorpalette.com](https://icolorpalette.com/aba6de_b6bcd6_a3e6be_abffb8_c8ded0)
+
 
 ## Available Scripts
 
