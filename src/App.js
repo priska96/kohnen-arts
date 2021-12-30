@@ -7,7 +7,7 @@ import {increaseCounter, decreaseCounter} from './redux/Counter/counter.actions'
 import logo from "./logo.svg";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
-import Shop from "./Shop";
+import PhotoGallery from "./PhotoGallery";
 import Contact from "./Contact";
 
 function App(props) {
@@ -27,15 +27,15 @@ function App(props) {
                             <img
                                 src={logo}
                                 className="d-inline-block align-top logo"
-                                alt="React Bootstrap logo"
+                                alt="Kohnen Arts logo"
                             />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto flex-grow-1">
                                 <Nav.Link href="#home" className="flex-grow-1 text-center">Home</Nav.Link>
-                                <Nav.Link href="#shop" className="flex-grow-1 text-center">Shop</Nav.Link>
-                                <Nav.Link href="#aboutus" className="flex-grow-1 text-center">About Us</Nav.Link>
+                                <Nav.Link href="#photogallery" className="flex-grow-1 text-center">Portfolio</Nav.Link>
+                                <Nav.Link href="#aboutus" className="flex-grow-1 text-center">About Me</Nav.Link>
                                 <Nav.Link href="#contact" className="flex-grow-1 text-center">Contact</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
@@ -44,15 +44,15 @@ function App(props) {
             </div>
             {props.productId ?
                 <React.Fragment>
-                    <a className="anchor" name="shop"/>
-                    <Shop/>
+                    <a className="anchor" name="photogallery"/>
+                    <PhotoGallery/>
                 </React.Fragment>
                 :
                 <React.Fragment>
                     <a className="anchor" name="home"/>
                     <Home/>
-                    <a className="anchor" name="shop"/>
-                    <Shop/>
+                    <a className="anchor" name="photogallery"/>
+                    <PhotoGallery/>
                     <a className="anchor" name="aboutus"/>
                     <AboutUs/>
                     {/*<div id="project-details"/>*/}
@@ -85,7 +85,7 @@ function App(props) {
 const mapStateToProps = state => {
     return {
         count: state.counter.count,
-        productId: state.products.productId,
+        productId: state.photos.productId,
     }
 }
 

@@ -2,14 +2,14 @@ import './App.css';
 import React from 'react'
 import {connect} from 'react-redux';
 import {Button, ButtonGroup, Card, CardGroup, Carousel, Container, Image, Jumbotron, Row, Col} from 'react-bootstrap';
-import annaBithja from './images/top4.png';
+import Bithja from './images/top4.png';
 
 function AboutUs() {
     return (
         <div className="AboutUs my-5">
             <Jumbotron className="cold-purple-bg text-white">
                 <Row>
-                    <Col><Image src={annaBithja}/></Col>
+                    <Col><Image src={Bithja}/></Col>
                     <Col sm={7}>
                         <h1>We are Anna and Bithja the founders of <i>Déjà Porté</i>!</h1>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod

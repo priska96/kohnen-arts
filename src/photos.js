@@ -3,7 +3,7 @@ import top2 from './images/top2.png';
 import top3 from './images/top3.png';
 import top4 from './images/top4.png';
 
-export const PRODUCTS ={
+export const PHOTOS ={
     1:{
         title: 'top',
         price: 5.00,

@@ -1,4 +1,4 @@
-import {DETAIL, LIST} from './shop.types';
+import {DETAIL, LIST} from './gallery.types';
 
 
 export const viewDetail = productId => {

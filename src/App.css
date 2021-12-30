@@ -167,11 +167,16 @@ nav.navbar {
   display: block;
 }
 
-/*** PRODUCTS ***/
-.product img{
-  height: 300px;
+/*** PHOTOS ***/
+.card-img{
+    width: unset;
 }
-
+.gallery-photo-overlay{
+    display: none;
+}
+.bg-dark.text-white.card:hover .gallery-photo-overlay{
+    display: block;
+}
 /*contact start*/
 .highlight {
     display: inline-block;

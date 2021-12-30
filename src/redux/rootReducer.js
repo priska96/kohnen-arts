@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import counterReducer from './Counter/counter.reducer';
-import productsReducer from './Shop/shop.reducer';
+import photosReducer from './Gallery/gallery.reducer';
 const rootReducer = combineReducers({
     counter: counterReducer,
-    products: productsReducer,
+    photos: photosReducer,
 });
 export default rootReducer;

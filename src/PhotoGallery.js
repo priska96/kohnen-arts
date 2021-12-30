@@ -1,31 +1,32 @@
 import './App.css';
 import React from 'react'
 import {connect} from 'react-redux';
+import Gallery from "./Gallery";
 import {Button, Card, CardGroup, Container} from 'react-bootstrap';
-import {viewDetail, viewList} from "./redux/Shop/shop.actions";
-import ProductDetail from "./ProductDetail";
+import {viewDetail, viewList} from "./redux/Gallery/gallery.actions";
+import PhotoDetail from "./PhotoDetail";
 
 
-function Shop(props) {
+function PhotoGallery(props) {
     return (
         <div className="Shop my-5">
             {props.productId ?
                 <div>
-                    <ProductDetail productId={props.productId}/>
+                    <PhotoDetail productId={props.productId}/>
                     <Button variant="loading" onClick={() => props.viewList()}>Back to Overview</Button>
                 </div>
                 :
-                <div>
+                /*<div>
                     <h1>Products</h1>
                     <Container>
                         <CardGroup className="flex-row justify-content-around align-items-start visible-md">
-                            {props.products.map((product, i) => (
+                            {props.photos.map((photo, i) => (
                                 <Card key={i} className="flex-fill col-md-3 p-3 product">
-                                    <Card.Img src={product.img}/>
+                                    <Card.Img src={phot.img}/>
                                     <div className="card-overlay bottom">
                                         <Card.Body>
-                                            <Card.Title>{product.title}</Card.Title>
-                                            <Card.Text>{product.price} €</Card.Text>
+                                            <Card.Title>{photo.title}</Card.Title>
+                                            <Card.Text>{photo.price} €</Card.Text>
                                             <Button variant="loading"
                                                     onClick={() => props.viewDetail(product.id)}>View Details</Button>
                                         </Card.Body>
@@ -34,6 +35,10 @@ function Shop(props) {
                             )}
                         </CardGroup>
                     </Container>
+                </div>*/
+                <div>
+                    <h1>Galerie</h1>
+                    <Gallery photos={props.photos} direction={"column"} />
                 </div>
             }
         </div>
@@ -42,8 +47,8 @@ function Shop(props) {
 
 const mapStateToProps = state => {
     return {
-        products: state.products.products,
-        productId: state.products.productId
+        photos: state.photos.photos,
+        productId: state.photos.productId
     }
 }
 
@@ -53,4 +58,4 @@ const mapDispatchToProps = productId => (dispatch) => {
         viewList: () => dispatch(viewList()),
     }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Shop);
+export default connect(mapStateToProps, mapDispatchToProps)(PhotoGallery);

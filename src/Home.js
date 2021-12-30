@@ -9,7 +9,7 @@ function Home() {
                 <Card.Img src={header}/>
                 <Card.ImgOverlay className="d-flex align-items-center">
                 <h1 className="flex-grow-1 glow">
-                    Déjà Porté
+                    Kohnen Arts
                 </h1>
                 </Card.ImgOverlay>
             </Card>

@@ -15,9 +15,9 @@ function Contact() {
                 <p className="w-md-75 w-100 mx-auto contact-text">
                     If you want to get in touch with me, quickly fill out the form below. Let's talk about a project
                     collaboration or just say Hi to me! Of course you can also send me an email directly
-                    to <a href="mailto:priskakohnen@gmail.com" className="highlight">priskakohnen@gmail.com</a>
+                    to <a href="mailto:b.kohnen@myself.com" className="highlight">b.kohnen@myself.com</a>
                 </p>
-                    <Form className="w-md-75 w-100 mx-auto" action="https://formspree.io/f/xzbkkyjn" method="POST">
+                    <Form className="w-md-75 w-100 mx-auto" action="https://formspree.io/f/xgedegvv" method="POST">
                         <Form.Row className="justify-content-between m-0">
                             <Form.Group controlId="formEmail">
                                 <Form.Label>Your Email</Form.Label>
@@ -25,7 +25,11 @@ function Contact() {
                             </Form.Group>
                             <Form.Group controlId="formName">
                                 <Form.Label>Your Name</Form.Label>
-                                <Form.Control type="text" name="name" required={true} placeholder="Enter full name"/>
+                                <Form.Check type="text" name="name" required={true} placeholder="Enter full name"/>
+                            </Form.Group>
+                            <Form.Group controlId="formName">
+                                <Form.Label>Sign up for the Newsletter</Form.Label>
+                                <Form.Check name="newsletter" required={false} />
                             </Form.Group>
                         </Form.Row>
                          <Form.Group controlId="formMessage">
